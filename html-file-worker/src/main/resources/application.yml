@@ -1,0 +1,11 @@
+server:
+  port: 8089
+
+spring:
+  kafka:
+    consumer:
+      group-id: group_id
+      auto-offset-reset: earliest
+      bootstrap-servers: 172.17.0.1:9092
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
